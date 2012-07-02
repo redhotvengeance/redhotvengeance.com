@@ -1,0 +1,6 @@
+---
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
