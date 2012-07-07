@@ -1,6 +1,9 @@
 ---
+destination: public
 exclude:
   - .gitignore
   - Gemfile
   - Gemfile.lock
   - Rakefile
+  - app.rb
+  - public
