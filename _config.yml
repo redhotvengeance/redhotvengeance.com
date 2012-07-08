@@ -1,4 +1,5 @@
 ---
+permalink: pretty
 destination: public
 exclude:
   - .gitignore
