@@ -15,7 +15,7 @@ module Jekyll
 
     def convert(content)
       begin
-        engine = Sass::Engine.new(content, :syntax => :scss)
+        engine = Sass::Engine.new(content, {:syntax => :scss, :load_paths => ['.', "styles/"]})
         engine.render
       rescue StandardError => e
         puts e.message
