@@ -1,4 +1,19 @@
 ---
 layout: default
 ---
-{{content}}
+<div id='info'>
+  <ul>
+    <li>posted: {{ page.date | date_to_number }}</li>
+    <li>by: {{ page.author }}</li>
+    <li>tags:
+      <ul>
+        {% for tag in page.tags %}
+        <li>{{tag}}</li>
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+</div>
+<div id='article'>
+  {{content}}
+</div>
