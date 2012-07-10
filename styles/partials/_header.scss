@@ -17,23 +17,57 @@ header {
     height:5px;
   }
 
+  #header-wrapper {
+    width:100%;
+    text-align: center;
+    position:absolute;
+  }
+
+  #header-content {
+    max-width:960px;
+    position:relative;
+    width:inherit;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #logo {
     background-image:url('/assets/images/logo.png');
-    position: relative;
+    position: absolute;
     width: 168px;
     height: 161px;
+    margin-left:5px;
   }
 
   nav {
+    position:absolute;
     float:left;
+    margin-left:10px;
+    top:122px;
+    left:158px;
 
     li {
       display:inline;
+
+      a {
+        position:relative;
+        background-color:#c02222;
+        width:66px;
+        height:23px;
+        font-size:14px;
+        color:#cccccc;
+        float:left;
+        margin-right:2px;
+        padding-top:4px;
+      }
     }
   }
 
   #social {
+    position:relative;
     float:right;
+    margin-right:10px;
+    top:106px;
 
     li {
       display:inline;
