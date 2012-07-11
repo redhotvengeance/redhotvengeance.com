@@ -6,16 +6,19 @@
   http://redhotvengeance.com
 */
 html {
-    font-family: "Helvetica";
+    font-family: "Avenir";
     font-size: 100%;
 }
 
 body {
     background-color:white;
     color: #4c4c4c;
+    width:100%;
 }
 
 @import "partials/header";
+
+@import "partials/posts";
 
 @import "partials/helpers";
 @import "partials/print";

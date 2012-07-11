@@ -1,0 +1,25 @@
+.posts {
+  position:absolute;
+  top:160px;
+  list-style:none;
+  text-align:center;
+  line-height:20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0;
+  width:100%;
+
+  span {
+    font-size:10px;
+    color:#ed898b;
+  }
+
+  li {
+    margin-bottom:25px;
+
+    a {
+      font-size:25px;
+      color:#4c4c4c;
+    }
+  }
+}
