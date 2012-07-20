@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I AM TEST POST
+title: I am test post.
 author: Ian Lollar
 tags: [tag1, tag2]
 ---
