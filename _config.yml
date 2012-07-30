@@ -8,3 +8,4 @@ exclude:
   - Rakefile
   - app.rb
   - public
+paginate: 1

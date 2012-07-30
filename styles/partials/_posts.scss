@@ -1,6 +1,89 @@
 .posts {
   position:absolute;
-  top:30px;
+  top:146px;
+  list-style:none;
+  text-align:center;
+  line-height:20px;
+  margin-top:0;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0;
+  width:75%;
+
+  li {
+    margin-bottom:35px;
+  }
+}
+
+h1.post-title {
+  margin-bottom:40px;
+
+  a {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size:30px;
+    color:#901111;
+    font-variant:small-caps;
+    letter-spacing:.035em;
+  }
+}
+
+.post-meta {
+  font-family: 'PT Sans', sans-serif;
+  font-size:11px;
+  color:#4c4c4c;
+  letter-spacing:.1em;
+  margin-bottom: 10px;
+}
+
+.read-on {
+  margin-top:20px;
+  border-bottom:1px solid #901111;
+  border-top:1px solid #901111;
+  width:80px;
+  margin-left:auto;
+  margin-right:auto;
+
+  a {
+    font-family: 'PT Sans', sans-serif;
+    font-size:11px;
+    color:#901111;
+    letter-spacing:.1em;
+  }
+}
+
+.post-divider {
+  margin-top: 35px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size:28px;
+  color:#901111;
+}
+
+.pagination {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 13px;
+  color:#901111;
+}
+
+.post-content {
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
+
+  p {
+    line-height:24px;
+    text-align:left;
+    max-width:550px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0;
+    margin-bottom:24px;
+    padding:0;
+  }
+}
+
+.article {
+  position:absolute;
+  top:146px;
   list-style:none;
   text-align:center;
   line-height:20px;
@@ -8,18 +91,4 @@
   margin-right: auto;
   padding:0;
   width:75%;
-
-  span {
-    font-size:12px;
-    color:#dfa3a5;
-  }
-
-  li {
-    margin-bottom:35px;
-
-    a {
-      font-size:24px;
-      color:#4c4c4c;
-    }
-  }
 }

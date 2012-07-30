@@ -1,19 +1,17 @@
 ---
 layout: default
 ---
-<div id='info'>
-  <ul>
-    <li>posted: {{ page.date | date_to_number }}</li>
-    <li>by: {{ page.author }}</li>
-    <li>tags:
-      <ul>
-        {% for tag in page.tags %}
-        <li>{{tag}}</li>
-        {% endfor %}
-      </ul>
-    </li>
-  </ul>
-</div>
-<div id='article'>
-  {{content}}
+<div class='article'>
+  <div class='post-meta'>
+    <time datetime='{{page.date}}' class='post-date'>{{page.date | date_to_day_month_year}}</time>
+    <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+    <span class='post-author'>{{page.author}}</span>
+  </div>
+
+  <h1 class='post-title'>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </h1>
+  <div class='post-content'>
+    {{content}}
+  </div>
 </div>

@@ -12,7 +12,8 @@
 }
 
 html {
-    font-family: "Avenir";
+    font-family: 'PT Sans', sans-serif;
+    color:#4c4c4c;
     font-size: 100%;
 }
 
@@ -22,12 +23,24 @@ body {
     width:100%;
 }
 
-#color-strip {
-  position:fixed;
-  background-color:#901111;
-  width:100%;
-  height:10px;
-  top:0px;
+h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size:16px;
+  color:#901111;
+  font-weight:normal;
+  margin:0;
+}
+
+p {
+  font-size:15px;
+  letter-spacing:.1em;
+  font-weight: normal;
+}
+
+.content {
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 @import "partials/header";
