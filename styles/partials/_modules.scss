@@ -1,0 +1,196 @@
+.color-strip {
+  position: fixed;
+  background-color: #901111;
+  width: 100%;
+  height: 10px;
+  top: 0px;
+}
+
+.message-bar {
+  position: relative;
+  top: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom:1px solid #f7e6e6;
+}
+
+.sidebar {
+  top: 10px;
+  border-left: 1px solid #f7e6e6;
+  height: 100%;
+}
+
+.sidebar-top {
+  position: relative;
+  top: 40px;
+}
+
+.sidebar-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  background-image: url('/assets/images/logo.png');
+  width: 150px;
+  height: 150px;
+}
+
+.main-nav {
+  position: relative;
+  width: 150px;
+  top: 30px;
+
+  > li {
+    
+    > a {
+      font-family: 'Ubuntu Condensed', sans-serif;
+      font-size: 1em;
+      color: white;
+      display: inline;
+      background-color: #901111;
+      width: 150px;
+      height: 37px;
+      font-size: 16px;
+      float: left;
+      margin-bottom: 10px;
+      padding: 0.625em;
+    }
+  }
+}
+
+.social {
+  width: 150px;
+  height: auto;
+
+  > li {
+    float: left;
+    width: 33.33333%;
+    height: 30px;
+
+    > a {
+      display: block;
+      width:100%;
+      height:100%;
+      background-repeat:no-repeat;
+      background-position:center;
+      opacity: 0.6;
+    }
+
+    > a:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.twitter {
+  background-color: #00aced;
+  background-image: url('/assets/images/social/twitter.png');
+  background-size: auto 60%;
+}
+
+.cargocollective {
+  background-color: #00ce69;
+  background-image: url('/assets/images/social/cargocollective.png');
+  background-size: auto 65%;
+}
+
+.instagram {
+  background-color: #235682;
+  background-image: url('/assets/images/social/instagram.png');
+  background-size: auto 65%;
+}
+
+.github {
+  background-color: #4183c4;
+  background-image: url('/assets/images/social/github.png');
+  background-size: auto 65%;
+}
+
+.stackoverflow {
+  background-color: #eaeaea;
+  background-image: url('/assets/images/social/stackoverflow.png');
+  background-size: auto 65%;
+}
+
+.rss {
+  background-color: #f08e33;
+  background-image: url('/assets/images/social/rss.png');
+  background-size: auto 60%;
+}
+
+.legal {
+  position: relative;
+  width: 150px;
+  margin-left: -75px;
+  left: 50%;
+  clear: both;
+  padding-top:20px;
+
+  > p {
+    font-size: 0.563em;
+    color: #cb6c6e;
+    line-height: 1.3em;
+  }
+}
+
+.main-content {
+  position: relative;
+  top: 40px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+
+
+
+
+.post-title {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size:30px;
+  color:#901111;
+  font-variant:small-caps;
+  letter-spacing:.035em;
+  margin-bottom:40px;
+}
+
+.post-meta {
+  font-family: 'PT Sans', sans-serif;
+  font-size:11px;
+  color:#4c4c4c;
+  letter-spacing:.1em;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  max-width:550px;
+  text-align:left;
+}
+
+.read-on {
+  margin-top:20px;
+  border-bottom:1px solid #901111;
+  border-top:1px solid #901111;
+  width:70px;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:11px;
+  padding-top:2px;
+  padding-bottom:2px;
+}
+
+.post-divider {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size:28px;
+  color:#901111;
+}
+
+.pagination {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 13px;
+  color:#901111;
+}

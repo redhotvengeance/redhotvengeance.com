@@ -5,27 +5,27 @@ title: Welcome
 <ul class='posts'>
 {% for post in paginator.posts %}
   <li>
-    <div class='post-meta'>
+    <div class='post-meta center'>
       <time datetime='{{post.date}}' class='post-date'>{{post.date | date_to_day_month_year}}</time>
       <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
       <span class='post-author'>{{post.author}}</span>
     </div>
     
-    <h1 class='post-title'>
+    <h1 class='post-title center'>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </h1>
-    <div class='post-content'>
+    <div class='post-content center'>
       {{post.content | split:'<!--more-->' | first}}
     </div>
     {% if post.content contains '<!--more-->' %}
-    <div class='read-on'>
+    <div class='read-on center'>
       <a href="{{ post.url }}">Read on -></a>
     </div>
     {% endif %}
-    <div class='post-divider'>&bull;</div>
+    <div class='post-divider center'>&bull;</div>
   </li>
 {% endfor %}
-  <li>
+  <li class='center'>
   {% if paginator.total_pages > 1 %}
     {% if paginator.previous_page %}
       <a href="{{paginator.previous_page}}" class="pagination"><- Show me newer&nbsp;&nbsp;|&nbsp;&nbsp;</a>
