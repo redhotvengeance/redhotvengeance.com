@@ -2,6 +2,8 @@
 permalink: pretty
 destination: public
 exclude:
+  - RedHotVengeance.sublime-project
+  - RedHotVengeance.sublime-workspace
   - .gitignore
   - Gemfile
   - Gemfile.lock
