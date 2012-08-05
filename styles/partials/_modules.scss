@@ -165,8 +165,49 @@
 }
 
 .post-content {
-  max-width:550px;
+  max-width:580px;
   text-align:left;
+  padding-left:15px;
+  padding-right:15px;
+
+  > h2 {
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    > em {
+      font-weight: 700;
+      font-style: italic;
+    }
+  }
+  
+  > p {
+    font-weight: 400;
+    padding-bottom: 15px;
+    line-height: 1.5em;
+    margin-left:auto;
+    margin-right:auto;
+
+    > em {
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    > strong {
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    > img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
 }
 
 .read-on {
