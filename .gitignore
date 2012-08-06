@@ -1,5 +1,6 @@
 .DS_Store
 .sass-cache
+.pygments-cache
 *.sublime-project
 *.sublime-workspace
 public
