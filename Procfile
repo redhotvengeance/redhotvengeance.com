@@ -1,0 +1,1 @@
+web: ruby -rubygems app.rb -e $RACK_ENV -p $PORT
