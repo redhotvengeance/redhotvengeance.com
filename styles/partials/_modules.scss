@@ -133,6 +133,8 @@
 .social {
   width: 150px;
   height: auto;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   > li {
     float: left;
@@ -160,6 +162,8 @@
     bottom: 0;
     z-index: 10;
     width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
 
     > li {
       width: 16.656%;
@@ -209,23 +213,41 @@
 }
 
 .legal {
-  position: relative;
-  width: 150px;
-  margin-left: -75px;
-  left: 50%;
-  clear: both;
-  padding-top:20px;
+  position: fixed;
+  width: 25%;
+  bottom: 0;
+  right: 0;
 
   > p {
     font-size: 0.563em;
     color: #cb6c6e;
     line-height: 1.3em;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .legal {
+    width: 33.33333%;
   }
 }
 
 @media screen and (max-width: 580px) {
   .legal {
-    display: none;
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    > p {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 }
 
