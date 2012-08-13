@@ -263,14 +263,16 @@
   max-width: 550px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 25px;
 }
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.5%;
+  //padding-bottom: 56.5%;
+  height: 320px;
 
   > iframe {
-    position: absolute;
+    //position: absolute;
     width: 100%;
     height: 100%;
     padding-left: 15px;

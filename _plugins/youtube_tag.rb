@@ -11,7 +11,7 @@ module Jekyll
     end
 
     def render(context)
-      "<figure class='video'><div class='video-wrapper'><iframe src='http://www.youtube.com/embed/#{@id}' frameborder='0' allowfullscreen='true'></iframe></div></figure>"
+      "<figure class='video'><div class='video-wrapper'><iframe src='http://www.youtube.com/embed/#{@id}' width='480' height='360'>youtube</iframe></div></figure>"
     end
   end
 end
