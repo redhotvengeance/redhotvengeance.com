@@ -410,12 +410,12 @@
 }
 
 .about-hello {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 
   > h1 {
     display: inline-block;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 3.2rem;
+    font-size: 3.1rem;
     color: #4c4c4c;
     font-weight: 700;
     font-style: normal;
@@ -434,7 +434,7 @@
   > h3 {
     display: inline-block;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 2.3rem;
+    font-size: 2.0rem;
     color: #e0e0e0;
     padding-right: 8px;
     letter-spacing: 0.1rem;
@@ -444,7 +444,7 @@
 .about-names {
   > h3 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 2.25rem;
+    font-size: 2.2rem;
     color: #e0e0e0;
     font-weight: 400;
     font-style: normal;
@@ -453,7 +453,7 @@
 }
 
 .about-red-hot-vengeance {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 
   > h1 {
     display: inline-block;
@@ -467,7 +467,7 @@
 }
 
 .about-i-do {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 
   > ul {
     > li {
@@ -500,16 +500,19 @@
 }
 
 .about-i-live {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .about-i-live-with-my {
   display: inline-block;
+  margin-left: 5px;
+  margin-right: 10px;
 
   > h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 3.375rem;
+    font-size: 3.2rem;
     color: #e0e0e0;
+    letter-spacing: -0.15rem;
 
     > strong {
       color: #c4c4c4;
@@ -518,9 +521,9 @@
 
   > h2 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.750rem;
+    font-size: 1.6rem;
     color: #e0e0e0;
-    letter-spacing: 0.4rem;
+    letter-spacing: -0.1rem;
   }
 }
 
@@ -529,14 +532,21 @@
 
   > ul > li > h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.688rem;
+    font-size: 1.4rem;
     color: #c4c4c4;
+    width: 125px;
+    //background-color: #aaaaaa;
   }
   
   > h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 3.375rem;
-    color: #c4c4c4;
+    font-size: 3.2rem;
+    color: #999999;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.01em;
+    width: 125px;
+    //background-color: #aaaaaa;
   }
 }
 
@@ -545,14 +555,19 @@
 
   > ul > li > h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.688rem;
+    font-size: 1.4rem;
     color: #c4c4c4;
   }
   
   > h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 3.375rem;
-    color: #c4c4c4;
+    font-size: 3.2rem;
+    color: #999999;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.01em;
+    width: 125px;
+    //background-color: #aaaaaa;
   }
 }
 
@@ -561,19 +576,28 @@
 
   > ul > li > h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.688rem;
+    font-size: 1.4rem;
     color: #c4c4c4;
   }
   
   > h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 3.375rem;
-    color: #c4c4c4;
+    font-size: 3.2rem;
+    color: #999999;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.01em;
+    padding-bottom: 5px;
+    width: 125px;
+    //background-color: #aaaaaa;
   }
 }
 
 .about-i-live-divider {
+  position: relative;
   display: inline-block;
+  top: -12px;
+  margin-left: 5px;
 
   > h1 {
     font-family: 'Ubuntu', sans-serif;
@@ -584,7 +608,7 @@
 
 .about-i-work {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 
   > h1 {
     font-family: 'Ubuntu', sans-serif;
@@ -598,7 +622,7 @@
 }
 
 .about-words {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 
   > h1 {
     font-family: 'Ubuntu', sans-serif;
@@ -617,5 +641,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 2.688rem;
     color: #901111;
+    font-weight: 700;
+    font-style: normal;
   }
 }
