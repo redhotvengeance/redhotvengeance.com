@@ -403,3 +403,219 @@
     padding-right: 15px;
   }
 }
+
+.about-content {
+  //max-width: 600px;
+  color: #e0e0e0;
+}
+
+.about-hello {
+  margin-bottom: 20px;
+
+  > h1 {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.2rem;
+    color: #4c4c4c;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+  }
+
+  > h2 {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: #c4c4c4;
+    padding-right: 10px;
+    letter-spacing: 0.1rem;
+  }
+
+  > h3 {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.3rem;
+    color: #e0e0e0;
+    padding-right: 8px;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.about-names {
+  > h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.25rem;
+    color: #e0e0e0;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 5px;
+  }
+}
+
+.about-red-hot-vengeance {
+  margin-bottom: 20px;
+
+  > h1 {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.0rem;
+    color: #901111;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 10px;
+  }
+}
+
+.about-i-do {
+  margin-bottom: 20px;
+
+  > ul {
+    > li {
+      display: inline-block;
+
+      > h2 {
+        font-family: 'Ubuntu Condensed', sans-serif;
+        font-size: 1.250rem;
+        color: #c4c4c4;
+      }
+
+      > ul {
+
+        > li {
+          display: block;
+          background-color: #901111;
+          width: 190px;
+          height: 72px;
+
+          > h1 {
+            font-family: 'Ubuntu Condensed', sans-serif;
+            font-size: 3.125rem;
+            color: #e0e0e0;
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-i-live {
+  margin-bottom: 20px;
+}
+
+.about-i-live-with-my {
+  display: inline-block;
+
+  > h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.375rem;
+    color: #e0e0e0;
+
+    > strong {
+      color: #c4c4c4;
+    }
+  }
+
+  > h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.750rem;
+    color: #e0e0e0;
+    letter-spacing: 0.4rem;
+  }
+}
+
+.about-i-live-with-my-wife {
+  display: inline-block;
+
+  > ul > li > h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.688rem;
+    color: #c4c4c4;
+  }
+  
+  > h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.375rem;
+    color: #c4c4c4;
+  }
+}
+
+.about-i-live-with-my-corgi {
+  display: inline-block;
+
+  > ul > li > h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.688rem;
+    color: #c4c4c4;
+  }
+  
+  > h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.375rem;
+    color: #c4c4c4;
+  }
+}
+
+.about-i-live-with-my-cat {
+  display: inline-block;
+
+  > ul > li > h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.688rem;
+    color: #c4c4c4;
+  }
+  
+  > h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.375rem;
+    color: #c4c4c4;
+  }
+}
+
+.about-i-live-divider {
+  display: inline-block;
+
+  > h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.125rem;
+    color: #e0e0e0;
+  }
+}
+
+.about-i-work {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  > h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.688rem;
+    color: #e0e0e0;
+
+    > strong {
+      color: #999999;
+    }
+  }
+}
+
+.about-words {
+  margin-bottom: 20px;
+
+  > h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.0rem;
+    color: #e0e0e0;
+    letter-spacing: 0.2rem;
+
+    > strong {
+      color: #999999;
+    }
+  }
+}
+
+.about-enjoy {
+  > h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.688rem;
+    color: #901111;
+  }
+}
