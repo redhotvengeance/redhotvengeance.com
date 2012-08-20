@@ -475,8 +475,9 @@
 
       > h2 {
         font-family: 'Ubuntu Condensed', sans-serif;
-        font-size: 1.250rem;
+        font-size: 1.2rem;
         color: #c4c4c4;
+        padding-bottom: 2px;
       }
 
       > ul {
@@ -489,9 +490,9 @@
 
           > h1 {
             font-family: 'Ubuntu Condensed', sans-serif;
-            font-size: 3.125rem;
+            font-size: 2.5rem;
             color: #e0e0e0;
-            padding-top: 10px;
+            padding-top: 18px;
           }
         }
       }
@@ -505,7 +506,6 @@
 
 .about-i-live-with-my {
   display: inline-block;
-  //margin-left: 5px;
   margin-right: 15px;
 
   > h1 {
@@ -536,7 +536,6 @@
     font-size: 1.24rem;
     color: #c4c4c4;
     width: 115px;
-    //background-color: #eeeeee;
     top: -5px;
   }
   
@@ -548,7 +547,6 @@
     font-style: normal;
     letter-spacing: 0.01em;
     width: 115px;
-    //background-color: #eeeeee;
   }
 }
 
@@ -561,7 +559,6 @@
     font-size: 1.24rem;
     color: #c4c4c4;
     width: 140px;
-    //background-color: #eeeeee;
     top: -5px;
   }
   
@@ -573,7 +570,6 @@
     font-style: normal;
     letter-spacing: 0.01em;
     width: 140px;
-    //background-color: #eeeeee;
   }
 }
 
@@ -586,7 +582,6 @@
     font-size: 1rem;
     color: #c4c4c4;
     width: 95px;
-    //background-color: #eeeeee;
     top: -7px;
   }
   
@@ -599,7 +594,6 @@
     letter-spacing: 0.01em;
     padding-bottom: 5px;
     width: 95px;
-    //background-color: #eeeeee;
   }
 }
 
