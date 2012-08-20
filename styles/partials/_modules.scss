@@ -532,15 +532,19 @@
 .about-i-live-with-my-wife {
   display: inline-block;
 
-  > ul > li > h1 {
-    position: relative;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.24rem;
-    color: #c4c4c4;
-    width: 115px;
-    top: -5px;
+  > ul {
+    top: -4px;
+
+    > li {
+      > h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.24rem;
+        color: #c4c4c4;
+        width: 115px;
+      }
+    }
   }
-  
+
   > h1 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 3.2rem;
@@ -555,13 +559,17 @@
 .about-i-live-with-my-corgi {
   display: inline-block;
 
-  > ul > li > h1 {
-    position: relative;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.24rem;
-    color: #c4c4c4;
-    width: 140px;
-    top: -5px;
+  > ul {
+    top: -4px;
+
+    > li {
+      > h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.24rem;
+        color: #c4c4c4;
+        width: 140px;
+      }
+    }
   }
   
   > h1 {
@@ -578,13 +586,17 @@
 .about-i-live-with-my-cat {
   display: inline-block;
 
-  > ul > li > h1 {
-    position: relative;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
-    color: #c4c4c4;
-    width: 95px;
-    top: -7px;
+  > ul {
+    top: -6px;
+
+    > li {
+      > h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
+        color: #c4c4c4;
+        width: 95px;
+      }
+    }
   }
   
   > h1 {

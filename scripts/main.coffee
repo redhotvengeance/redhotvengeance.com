@@ -31,6 +31,41 @@ $(document).ready =>
   rotateItemList(iLike, 250)
   rotateItemList(iUse, 500)
 
+  ## i live ##
+  $('.about-i-live-with-my-wife > ul').css('width', '115px')
+  $('.about-i-live-with-my-wife > ul').css('height', '21px')
+  $('.about-i-live-with-my-wife > ul').css('overflow', 'hidden')
+  $('.about-i-live-with-my-wife > ul').css('position', 'relative')
+  $('.about-i-live-with-my-wife > ul > li').css('position', 'absolute')
+
+  $('.about-i-live-with-my-corgi > ul').css('width', '140px')
+  $('.about-i-live-with-my-corgi > ul').css('height', '21px')
+  $('.about-i-live-with-my-corgi > ul').css('overflow', 'hidden')
+  $('.about-i-live-with-my-corgi > ul').css('position', 'relative')
+  $('.about-i-live-with-my-corgi > ul > li').css('position', 'absolute')
+
+  $('.about-i-live-with-my-cat > ul').css('width', '95px')
+  $('.about-i-live-with-my-cat > ul').css('height', '17px')
+  $('.about-i-live-with-my-cat > ul').css('overflow', 'hidden')
+  $('.about-i-live-with-my-cat > ul').css('position', 'relative')
+  $('.about-i-live-with-my-cat > ul > li').css('position', 'absolute')
+
+  myWife = $('#my-wife > li')
+  myCorgi = $('#my-corgi > li')
+  myCat = $('#my-cat > li')
+
+  myWife.hide()
+  myCorgi.hide()
+  myCat.hide()
+
+  myWife = _.shuffle(myWife)
+  myCorgi = _.shuffle(myCorgi)
+  myCat = _.shuffle(myCat)
+
+  rotateItemList(myWife, 0, 0)
+  rotateItemList(myCorgi, 0, 0)
+  rotateItemList(myCat, 0, 0)
+
 rotateItemList = (itemList, delay, duration = .65) =>
   setTimeout =>
     $(itemList[0]).css("top", -$(itemList[0]).height())
