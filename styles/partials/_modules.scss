@@ -611,12 +611,25 @@
   margin-bottom: 35px;
 
   > h1 {
+    position: relative;
+    display: inline-block;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 2.688rem;
+    font-size: 2.1rem;
     color: #e0e0e0;
+    top: -25px;
+    padding-right: 8px;
+    letter-spacing: 0.2rem;
 
     > strong {
       color: #999999;
+    }
+  }
+
+  > ul {
+    display: inline-block;
+
+    > li {
+      border: 1px solid #cecece;
     }
   }
 }
