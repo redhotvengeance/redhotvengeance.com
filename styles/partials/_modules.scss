@@ -441,6 +441,24 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .about-hello {
+    > h1 {
+      font-size: 2.4rem;
+    }
+
+    > h2 {
+      font-size: 2.3rem;
+      padding-right: 5px;
+    }
+
+    > h3 {
+      font-size: 1.7rem;
+      padding-right: 0;
+    }
+  }
+}
+
 .about-names {
   > h3 {
     font-family: 'Ubuntu', sans-serif;
@@ -449,6 +467,15 @@
     font-weight: 400;
     font-style: normal;
     padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-names {
+    > h3 {
+      font-size: 1.7rem;
+      padding-left: 0;
+    }
   }
 }
 
@@ -463,6 +490,17 @@
     font-weight: 700;
     font-style: normal;
     padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-red-hot-vengeance {
+    > h1 {
+      font-size: 2.34rem;
+      padding-left: 10px;
+      position: relative;
+      left: -5px;
+    }
   }
 }
 
@@ -481,10 +519,14 @@
       }
 
       > ul {
+        width: 190px;
+        height: 72px;
+        overflow: hidden;
+        position: relative;
         background-color: #901111;
 
         > li {
-          position: relative;
+          position: absolute;
           display: block;
           background-color: #901111;
           width: 190px;
@@ -502,8 +544,36 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .about-i-do {
+    > ul {
+      > li {
+        > h2 {
+          font-size: 1rem;
+          padding-bottom: 2px;
+        }
+
+        > ul {
+          width: 145px;
+          height: 55px;
+
+          > li {
+            width: 145px;
+            height: 55px;
+
+            > h1 {
+              font-size: 1.5rem;
+              padding-top: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .about-i-live {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .about-i-live-with-my {
@@ -529,13 +599,35 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .about-i-live-with-my {
+    margin-right: 15px;
+
+    > h1 {
+      font-size: 2.7rem;
+      letter-spacing: -0.15rem;
+    }
+
+    > h2 {
+      font-size: 1.4rem;
+      letter-spacing: -0.1rem;
+    }
+  }
+}
+
 .about-i-live-with-my-wife {
   display: inline-block;
 
   > ul {
+    width: 115px;
+    height: 21px;
+    overflow: hidden;
+    position: relative;
     top: -4px;
 
     > li {
+      position: absolute;
+
       > h1 {
         font-family: 'Ubuntu', sans-serif;
         font-size: 1.24rem;
@@ -556,13 +648,44 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .about-i-live-with-my-wife {
+    > ul {
+      width: 80px;
+      height: 13px;
+      top: -10px;
+
+      > li {
+        position: absolute;
+
+        > h1 {
+          font-size: 0.8rem;
+          width: 80px;
+        }
+      }
+    }
+
+    > h1 {
+      font-size: 2.1rem;
+      letter-spacing: 0.01em;
+      width: 80px;
+    }
+  }
+}
+
 .about-i-live-with-my-corgi {
   display: inline-block;
 
   > ul {
+    width: 140px;
+    height: 21px;
+    overflow: hidden;
+    position: relative;
     top: -4px;
 
     > li {
+      position: absolute;
+
       > h1 {
         font-family: 'Ubuntu', sans-serif;
         font-size: 1.24rem;
@@ -583,13 +706,44 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .about-i-live-with-my-corgi {
+    > ul {
+      width: 85px;
+      height: 14px;
+      top: -10px;
+
+      > li {
+        position: absolute;
+
+        > h1 {
+          font-size: 0.8rem;
+          width: 85px;
+        }
+      }
+    }
+
+    > h1 {
+      font-size: 2.0rem;
+      letter-spacing: 0.01em;
+      width: 85px;
+    }
+  }
+}
+
 .about-i-live-with-my-cat {
   display: inline-block;
 
   > ul {
+    width: 95px;
+    height: 17px;
+    overflow: hidden;
+    position: relative;
     top: -6px;
 
     > li {
+      position: absolute;
+      
       > h1 {
         font-family: 'Ubuntu', sans-serif;
         font-size: 1rem;
@@ -611,6 +765,29 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .about-i-live-with-my-cat {
+    > ul {
+      width: 75px;
+      height: 13px;
+      top: -10px;
+
+      > li {
+        > h1 {
+          font-size: 0.8rem;
+          width: 75px;
+        }
+      }
+    }
+
+    > h1 {
+      font-size: 2.0rem;
+      letter-spacing: 0.01em;
+      width: 75px;
+    }
+  }
+}
+
 .about-i-live-divider {
   position: relative;
   display: inline-block;
@@ -623,6 +800,14 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 3.125rem;
     color: #e0e0e0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-i-live-divider {
+    > h1 {
+      font-size: 2.7rem;
+    }
   }
 }
 
@@ -648,9 +833,42 @@
   > ul {
     display: inline-block;
     border: 1px solid #cecece;
+    width: 235px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
 
     > li {
-      
+      position: absolute;
+      width: 235px;
+      height: 80px;
+
+      > img {
+        width: inherit;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-i-work {
+    > h1 {
+      position: relative;
+      font-size: 1.5rem;
+      top: -20px;
+      padding-right: 8px;
+      letter-spacing: 0.2rem;
+    }
+
+    > ul {
+      width: 180px;
+      height: 61px;
+
+      > li {
+        width: 180px;
+        height: 61px;
+      }
     }
   }
 }
@@ -670,6 +888,15 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .about-words {
+    > h1 {
+      font-size: 1.45rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+}
+
 .about-enjoy {
   > h1 {
     font-family: 'Ubuntu', sans-serif;
@@ -677,5 +904,13 @@
     color: #901111;
     font-weight: 700;
     font-style: normal;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-enjoy {
+    > h1 {
+      font-size: 2.2rem;
+    }
   }
 }

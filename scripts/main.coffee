@@ -9,12 +9,6 @@ $(document).ready =>
       $(@).hide()
 
   ## i do ##
-  $('.about-i-do > ul > li > ul').css('width', '190px')
-  $('.about-i-do > ul > li > ul').css('height', '72px')
-  $('.about-i-do > ul > li > ul').css('overflow', 'hidden')
-  $('.about-i-do > ul > li > ul').css('position', 'relative')
-  $('.about-i-do > ul > li > ul > li').css('position', 'absolute')
-
   iWrite = $('#i-write > li')
   iLike = $('#i-like > li')
   iUse = $('#i-use > li')
@@ -32,24 +26,6 @@ $(document).ready =>
   rotateItemList(iUse, 500)
 
   ## i live ##
-  $('.about-i-live-with-my-wife > ul').css('width', '115px')
-  $('.about-i-live-with-my-wife > ul').css('height', '21px')
-  $('.about-i-live-with-my-wife > ul').css('overflow', 'hidden')
-  $('.about-i-live-with-my-wife > ul').css('position', 'relative')
-  $('.about-i-live-with-my-wife > ul > li').css('position', 'absolute')
-
-  $('.about-i-live-with-my-corgi > ul').css('width', '140px')
-  $('.about-i-live-with-my-corgi > ul').css('height', '21px')
-  $('.about-i-live-with-my-corgi > ul').css('overflow', 'hidden')
-  $('.about-i-live-with-my-corgi > ul').css('position', 'relative')
-  $('.about-i-live-with-my-corgi > ul > li').css('position', 'absolute')
-
-  $('.about-i-live-with-my-cat > ul').css('width', '95px')
-  $('.about-i-live-with-my-cat > ul').css('height', '17px')
-  $('.about-i-live-with-my-cat > ul').css('overflow', 'hidden')
-  $('.about-i-live-with-my-cat > ul').css('position', 'relative')
-  $('.about-i-live-with-my-cat > ul > li').css('position', 'absolute')
-
   myWife = $('#my-wife > li')
   myCorgi = $('#my-corgi > li')
   myCat = $('#my-cat > li')
@@ -67,12 +43,6 @@ $(document).ready =>
   rotateItemList(myCat, 0, 0)
 
   ## my work ##
-  $('.about-i-work > ul').css('width', '235px')
-  $('.about-i-work > ul').css('height', '80px')
-  $('.about-i-work > ul').css('overflow', 'hidden')
-  $('.about-i-work > ul').css('position', 'relative')
-  $('.about-i-work > ul > li').css('position', 'absolute')
-
   myWork = $('#my-work > li')
 
   myWork.hide()
