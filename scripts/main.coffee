@@ -66,6 +66,21 @@ $(document).ready =>
   rotateItemList(myCorgi, 0, 0)
   rotateItemList(myCat, 0, 0)
 
+  ## my work ##
+  $('.about-i-work > ul').css('width', '235px')
+  $('.about-i-work > ul').css('height', '80px')
+  $('.about-i-work > ul').css('overflow', 'hidden')
+  $('.about-i-work > ul').css('position', 'relative')
+  $('.about-i-work > ul > li').css('position', 'absolute')
+
+  myWork = $('#my-work > li')
+
+  myWork.hide()
+
+  myWork = _.shuffle(myWork)
+
+  rotateItemList(myWork, 0, 0)
+
 rotateItemList = (itemList, delay, duration = .65) =>
   setTimeout =>
     $(itemList[0]).css("top", -$(itemList[0]).height())

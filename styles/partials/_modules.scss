@@ -647,9 +647,10 @@
 
   > ul {
     display: inline-block;
+    border: 1px solid #cecece;
 
     > li {
-      border: 1px solid #cecece;
+      
     }
   }
 }
