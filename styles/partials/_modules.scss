@@ -481,8 +481,10 @@
       }
 
       > ul {
+        background-color: #901111;
 
         > li {
+          position: relative;
           display: block;
           background-color: #901111;
           width: 190px;
@@ -490,9 +492,9 @@
 
           > h1 {
             font-family: 'Ubuntu Condensed', sans-serif;
-            font-size: 2.5rem;
+            font-size: 2.0rem;
             color: #e0e0e0;
-            padding-top: 18px;
+            padding-top: 20px;
           }
         }
       }
