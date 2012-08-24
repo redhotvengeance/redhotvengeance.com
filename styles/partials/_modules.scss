@@ -239,8 +239,8 @@
   .legal {
     position: relative;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     text-align: center;
 
     > p {
@@ -674,6 +674,7 @@
 
 @media screen and (max-width: 800px) {
   .about-i-live-with-my {
+    margin-left: 5px;
     margin-right: 15px;
 
     > h1 {
@@ -897,20 +898,21 @@
 
 @media screen and (max-width: 800px) {
   .about-i-live-divider {
-    > h1 {
-      font-size: 2.7rem;
-    }
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .about-i-live-divider {
+    margin-left: 14px;
+    margin-right: 10px;
     padding-left: 0;
     padding-right: 0;
 
     > h1 {
       font-size: 2.2rem;
     }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .about-i-live-divider {
+    margin-left: 8px;
+    margin-right: 5px;
   }
 }
 
