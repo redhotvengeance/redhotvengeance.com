@@ -8,48 +8,50 @@ $(document).ready =>
     if index isnt randomMessageIndex
       $(@).hide()
 
-  ## i do ##
-  iWrite = $('#i-write > li')
-  iLike = $('#i-like > li')
-  iUse = $('#i-use > li')
+  ## about ##
+  if $('.about-content').length > 0
+    ## i do ##
+    iWrite = $('#i-write > li')
+    iLike = $('#i-like > li')
+    iUse = $('#i-use > li')
 
-  iWrite.hide()
-  iLike.hide()
-  iUse.hide()
+    iWrite.hide()
+    iLike.hide()
+    iUse.hide()
 
-  iWrite = _.shuffle(iWrite)
-  iLike = _.shuffle(iLike)
-  iUse = _.shuffle(iUse)
+    iWrite = _.shuffle(iWrite)
+    iLike = _.shuffle(iLike)
+    iUse = _.shuffle(iUse)
 
-  rotateItemList(iWrite, 0)
-  rotateItemList(iLike, 250)
-  rotateItemList(iUse, 500)
+    rotateItemList(iWrite, 0)
+    rotateItemList(iLike, 250)
+    rotateItemList(iUse, 500)
 
-  ## i live ##
-  myWife = $('#my-wife > li')
-  myCorgi = $('#my-corgi > li')
-  myCat = $('#my-cat > li')
+    ## i live ##
+    myWife = $('#my-wife > li')
+    myCorgi = $('#my-corgi > li')
+    myCat = $('#my-cat > li')
 
-  myWife.hide()
-  myCorgi.hide()
-  myCat.hide()
+    myWife.hide()
+    myCorgi.hide()
+    myCat.hide()
 
-  myWife = _.shuffle(myWife)
-  myCorgi = _.shuffle(myCorgi)
-  myCat = _.shuffle(myCat)
+    myWife = _.shuffle(myWife)
+    myCorgi = _.shuffle(myCorgi)
+    myCat = _.shuffle(myCat)
 
-  rotateItemList(myWife, 0, 0)
-  rotateItemList(myCorgi, 0, 0)
-  rotateItemList(myCat, 0, 0)
+    rotateItemList(myWife, 0, 0)
+    rotateItemList(myCorgi, 0, 0)
+    rotateItemList(myCat, 0, 0)
 
-  ## my work ##
-  myWork = $('#my-work > li')
+    ## my work ##
+    myWork = $('#my-work > li')
 
-  myWork.hide()
+    myWork.hide()
 
-  myWork = _.shuffle(myWork)
+    myWork = _.shuffle(myWork)
 
-  rotateItemList(myWork, 0, 0)
+    rotateItemList(myWork, 0, 0)
 
 rotateItemList = (itemList, delay, duration = .65) =>
   setTimeout =>
