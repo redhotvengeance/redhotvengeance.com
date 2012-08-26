@@ -2,11 +2,12 @@
 ---
 $(document).ready =>
   ## messages ##
-  messages = $('.message-bar > h1')
-  randomMessageIndex = Math.floor(Math.random() * messages.length)
-  messages.each (index) ->
-    if index isnt randomMessageIndex
-      $(@).hide()
+  if $('.message-bar').length > 0
+    messages = $('.message-bar > h1')
+    randomMessageIndex = Math.floor(Math.random() * messages.length)
+    messages.each (index) ->
+      if index isnt randomMessageIndex
+        $(@).hide()
 
   ## about ##
   if $('.about-content').length > 0
@@ -46,11 +47,8 @@ $(document).ready =>
 
     ## my work ##
     myWork = $('#my-work > li')
-
     myWork.hide()
-
     myWork = _.shuffle(myWork)
-
     rotateItemList(myWork, 0, 0)
 
 rotateItemList = (itemList, delay, duration = .65) =>
