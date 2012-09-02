@@ -1,1 +1,1 @@
-web: ruby -rubygems app.rb -e $RACK_ENV -p $PORT
+web: bundle exec ruby app.rb -p $PORT
