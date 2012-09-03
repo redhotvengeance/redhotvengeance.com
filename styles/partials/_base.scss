@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: none;
+}
+
 body {
   background-color: white;
   color: #4c4c4c;
