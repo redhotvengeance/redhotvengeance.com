@@ -10,4 +10,5 @@ exclude:
   - Rakefile
   - app.rb
   - public
+  - Procfile
 paginate: 2
