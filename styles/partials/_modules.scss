@@ -91,7 +91,7 @@
   .logo {
     width: 100%;
     height: 200px;
-    background-size: 65%;
+    background-size: 70%;
   }
 }
 
@@ -468,15 +468,15 @@
   .about-hello {
     > h1 {
       display: block;
-      font-size: 4.0rem;
+      font-size: 3.7rem;
     }
 
     > h2 {
-      font-size: 3.1rem;
+      font-size: 3.0rem;
     }
 
     > h3 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 }
@@ -504,7 +504,7 @@
 @media screen and (max-width: 750px) {
   .about-names {
     > h3 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       padding-left: 0;
     }
   }
@@ -539,11 +539,12 @@
   .about-red-hot-vengeance {
     > h1 {
       display: block;
-      font-size: 3.9rem;
+      font-size: 3.7rem;
+      letter-spacing: 0.3rem;
     }
 
     > h1:nth-child(2) {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
     }
   }
 }
@@ -625,18 +626,18 @@
         > h2 {
           display: inline-block;
           font-size: 1.1rem;
-          width: 90px;
+          width: 65px;
           position: relative;
           bottom: 16px;
         }
 
         > ul {
           display: inline-block;
-          width: 230px;
+          width: 225px;
           height: 50px;
 
           > li {
-            width: 230px;
+            width: 225px;
             height: 50px;
 
             > h1 {
@@ -702,13 +703,13 @@
 
     > h1 {
       display: inline-block;
-      font-size: 3.5rem;
+      font-size: 3.0rem;
       padding-right: 10px;
     }
 
     > h2 {
       display: inline-block;
-      font-size: 3.5rem;
+      font-size: 3.0rem;
     }
   }
 }
@@ -771,6 +772,26 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  .about-i-live-with-my-wife {
+    > ul {
+      width: 75px;
+
+      > li {
+        > h1 {
+          font-size: 0.7rem;
+          width: 75px;
+        }
+      }
+    }
+
+    > h1 {
+      font-size: 1.9rem;
+      width: 75px;
+    }
+  }
+}
+
 .about-i-live-with-my-corgi {
   display: inline-block;
 
@@ -825,6 +846,29 @@
       font-size: 2.0rem;
       letter-spacing: 0.01em;
       width: 85px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about-i-live-with-my-corgi {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    > ul {
+      width: 75px;
+
+      > li {
+        > h1 {
+          font-size: 0.7rem;
+          width: 75px;
+        }
+      }
+    }
+
+    > h1 {
+      font-size: 1.9rem;
+      width: 75px;
     }
   }
 }
@@ -886,6 +930,26 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  .about-i-live-with-my-cat {
+    > ul {
+      width: 75px;
+
+      > li {
+        > h1 {
+          font-size: 0.7rem;
+          width: 75px;
+        }
+      }
+    }
+
+    > h1 {
+      font-size: 1.9rem;
+      width: 75px;
+    }
+  }
+}
+
 .about-i-live-divider {
   position: relative;
   display: inline-block;
@@ -916,8 +980,12 @@
 
 @media screen and (max-width: 750px) {
   .about-i-live-divider {
-    margin-left: 8px;
-    margin-right: 5px;
+    margin-left: 0;
+    margin-right: 0;
+
+    > h1 {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -989,19 +1057,20 @@
     top: 20px;
 
     > h1 {
-      font-size: 1.95rem;
+      font-size: 1.8rem;
       letter-spacing: 0.2rem;
+      margin-left: 10px;
     }
 
     > ul {
       position: relative;
       top: -10px;
-      width: 320px;
-      height: 109px;
+      width: 300px;
+      height: 102px;
 
       > li {
-        width: 320px;
-        height: 109px;
+        width: 300px;
+        height: 102px;
       }
     }
   }
@@ -1037,7 +1106,7 @@
     top: 10px;
 
     > h1 {
-      font-size: 1.2rem;
+      font-size: 1rem;
       letter-spacing: 0.1rem;
     }
   }
