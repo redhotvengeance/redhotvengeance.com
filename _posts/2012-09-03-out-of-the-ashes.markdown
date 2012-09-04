@@ -7,11 +7,11 @@ tags: [blog, code]
 
 **POOF!**
 
-…and the blog becometh.
+...and the blog becometh.
 
-As with all blogs born (or reborn, or third-born…multi-born?), this is the obligatory, *"Oh hey, check out my blog being launched!"* first post.
+As with all blogs born (or reborn, or third-born...multi-born?), this is the obligatory, *"Oh hey, check out my blog being launched!"* first post.
 
-The excitement…you can almost taste it. It's palpably palpable.
+The excitement...you can almost taste it. It's palpably palpable.
 
 But how about something actually worth *reading*? Personally, I enjoy learning a bit about the technology stack behind a site. The first post seems as good a post as any to discuss some of the gears and cogs making this blog turn.
 
@@ -20,7 +20,7 @@ But first, some obligatories:
 * No, I won't be migrating any of my previous blog's content.
 * Any libs or projects you may be looking for can be found on [my GitHub page](https://github.com/redhotvengeance).
 
-There. Now, let's move on. How this site works…
+There. Now, let's move on. How this site works...
 
 <!--more-->
 
