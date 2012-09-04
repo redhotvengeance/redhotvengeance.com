@@ -31,6 +31,16 @@
 
   > h1 {
     display: none;
+
+    > em {
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    > strong {
+      font-weight: 700;
+      font-style: normal;
+    }
   }
 
   > h1:nth-child(1) {
