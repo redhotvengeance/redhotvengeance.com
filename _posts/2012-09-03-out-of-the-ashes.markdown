@@ -13,7 +13,7 @@ As with all blogs born (or reborn, or third-born…multi-born?), this is the obl
 
 The excitement…you can almost taste it. It's palpably palpable.
 
-But how about something to actually worth *reading*? Personally, I enjoy learning a bit about the technology stack behind a site. The first post seems as good a post as any to discuss some of the gears and cogs making this blog turn.
+But how about something actually worth *reading*? Personally, I enjoy learning a bit about the technology stack behind a site. The first post seems as good a post as any to discuss some of the gears and cogs making this blog turn.
 
 But first, some obligatories:
 * Yes, this is my new blog.
@@ -28,7 +28,7 @@ There. Now, let's move on. How this site works…
 
 This site is built on [Jekyll](https://github.com/mojombo/jekyll), which is a static site generator. That means that this blog has no CMS, no DB, and no back-end to speak of. Why is that awesome? Well, because all of my content winds up being static, archivable/versionable files that I can deploy pretty much anywhere. Plus, I'm only really serving HTML/CSS/JS, which means the site is lean and fast.
 
-Jekyll is easy to set up. It requires a handful of specific files and a certain directory structure, but once that is all in place, a simple command line execution will build your static site files, which are ready for you to deploy.
+Jekyll is easy to set up. It requires a handful of specific files and a certain directory structure, but once all of that is in place, a simple command line execution will build your static site files, which are then ready for you to deploy.
 
 Jekyll allows you to write your posts/pages in Markdown, which I dig. It also uses Liquid for templates, which makes it easy to inject site and/or post data into your markup.
 
@@ -36,7 +36,7 @@ Jekyll allows you to write your posts/pages in Markdown, which I dig. It also us
 
 What's nice about Jekyll is that it is fairly easy to customize.
 
-I'm a fan of preprocessors, like CoffeeScript and Sass. So, naturally, it'd be nice to include compiling those along with building my site. Fairly simple: add a plugin for each in the "_plugins" folder. For example, the CoffeeScript plugin looks like:
+I'm a fan of preprocessors, like CoffeeScript and Sass. So, naturally, it'd be nice to include compiling those along with building my site. Fairly simple: add a plugin for each in the "_plugins" folder. For example, the CoffeeScript plugin looks like this:
 
 {% codeblock coffeescript_converter.rb lang:ruby %}
 module Jekyll
@@ -65,7 +65,7 @@ module Jekyll
 end
 {% endcodeblock %}
 
-Now, when Jekyll builds, any file with a ".coffee" extension will be ran through this converter, which will compile it into JavaScript.
+Now when Jekyll builds, any file with a ".coffee" extension will be ran through this converter, which will compile it into JavaScript.
 
 Another handy use for plugins are Liquid extensions. For instance, I wanted to customize how post dates would appear, so I wrote a small Liquid extension:
 
@@ -97,7 +97,7 @@ There are lots of handy open-sourced Jekyll extensions out there for you to use.
 
 ## Deploying
 
-Typically, Jekyll blogs are precompiled and then pushed up to the server. This can be done via FTP, or rsync, or various other methods. I prefer to use Git to deploy. It is clean and simple and readily done from the command line.
+Typically, Jekyll blogs are precompiled and then pushed up to the server. This can be done via FTP, rsync, or various other methods. I prefer to use Git to deploy. It is clean and simple and readily done from the command line.
 
 This presents a challenge, however. I prefer to keep compiled files out of my code repositories, so precompiling the Jekyll site is no longer an option, since the compiled site would have to be added to the repository in order for Git to push it. So the Jekyll site needs to be built server-side.
 
