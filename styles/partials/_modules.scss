@@ -4,7 +4,20 @@
   width: 100%;
   height: 10px;
   top: 0px;
+  z-index: 9998;
+}
+
+.no-js {
+  position: fixed;
+  background-color: #901111;
+  width: 100%;
+  height: 20px;
+  top: 9px;
   z-index: 9999;
+  text-align: center;
+  color: #e0e0e0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.8rem;
 }
 
 .message-bar {
