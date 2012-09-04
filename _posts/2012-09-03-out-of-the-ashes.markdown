@@ -97,7 +97,7 @@ There are lots of handy open-sourced Jekyll extensions out there for you to use.
 
 ## Deploying
 
-Typically, Jekyll blogs are precompiled and then pushed up to the server. This can be done via FTP, rsync, or various other methods. I prefer to use Git to deploy. It is clean and simple and readily done from the command line.
+Typically, Jekyll blogs are precompiled and then pushed up to the server. This can be done via FTP, rsync, or various other methods. I prefer to use Git to deploy. It is clean and simple, and readily done from the command line.
 
 This presents a challenge, however. I prefer to keep compiled files out of my code repositories, so precompiling the Jekyll site is no longer an option, since the compiled site would have to be added to the repository in order for Git to push it. So the Jekyll site needs to be built server-side.
 
@@ -115,7 +115,7 @@ jekyll <path to public site folder>
 
 (Depending on your server/host, you may need to add extra exports that point at the appropriate gem/lib/bin folders.)
 
-When new code is pushed to the repo, the post-recieve hook will copy the latest version of its contents to the GIT_WORK_TREE path. This path is where your Jekyll environment is set up (obviously requires ruby and bundler support). The hook will then install any necessary gems with bundler, and execute the Jekyll build, placing the compiled site files in the public-facing web directory, ready for the world to see. Sweet, sweet automation.
+When new code is pushed to the repo, the post-recieve hook will copy the latest version of its contents to the GIT_WORK_TREE path. This is where your Jekyll environment is set up (obviously requires ruby and bundler support). The hook will then install any necessary gems with bundler, and execute the Jekyll build, placing the compiled site files in the public-facing web directory, ready for the world to see. Sweet, sweet automation.
 
 ## The Beginning of Things
 
