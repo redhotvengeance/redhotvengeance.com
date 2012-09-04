@@ -1,4 +1,7 @@
 ---
+name: Red Hot Vengeance
+description: Words and word-shaped creations, furiously formed by Ian Lollar.
+url: http://www.redhotvengeance.com
 permalink: pretty
 destination: public
 exclude:
@@ -11,4 +14,4 @@ exclude:
   - app.rb
   - public
   - Procfile
-paginate: 2
+paginate: 10
