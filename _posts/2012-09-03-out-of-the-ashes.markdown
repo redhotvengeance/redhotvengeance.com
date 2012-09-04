@@ -125,4 +125,4 @@ If you'd like to dig more into what makes this blog work, it is available on [Gi
 
 More words and word-shaped creations to come...
 
-**-rhv**
+**- rhv**
