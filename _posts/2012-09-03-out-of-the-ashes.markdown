@@ -13,7 +13,7 @@ As with all blogs born (or reborn, or third-born…multi-born?), this is the obl
 
 The excitement…you can almost taste it. It's palpably palpable.
 
-But how about something to actually worth *reading*? Personally, I enjoy learning a bit about the technology stack behind a site. A first post seems as good a post as any to discuss some of the gears and cogs making this blog turn.
+But how about something to actually worth *reading*? Personally, I enjoy learning a bit about the technology stack behind a site. The first post seems as good a post as any to discuss some of the gears and cogs making this blog turn.
 
 But first, some obligatories:
 * Yes, this is my new blog.
