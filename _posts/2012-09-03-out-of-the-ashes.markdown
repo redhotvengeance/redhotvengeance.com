@@ -17,7 +17,7 @@ But how about something to actually worth *reading*? Personally, I enjoy learnin
 
 But first, some obligatories:
 * Yes, this is my new blog.
-* No, it won't have any of my previous blog's content migrated.
+* No, I won't be migrating any of my previous blog's content.
 * Any libs or projects you may be looking for can be found on [my GitHub page](https://github.com/redhotvengeance).
 
 There. Now, let's move on. How this site works…
