@@ -121,7 +121,7 @@ When new code is pushed to the repo, the post-recieve hook will copy the latest 
 
 And so, the new blog is born.
 
-If you'd like to dig more into what makes this blog work, it is available on GitHub (everything but the "_posts" and "assets" folders are open-sourced and free for you to use.)
+If you'd like to dig more into what makes this blog work, it is available on [GitHub](https://github.com/redhotvengeance/redhotvengeance) (everything but the "_posts" and "assets" folders are open-sourced and free for you to use.)
 
 More words and word-shaped creations to come...
 
