@@ -734,6 +734,7 @@
 
     > li {
       position: absolute;
+      display: none;
 
       > h1 {
         font-family: 'Ubuntu', sans-serif;
@@ -741,6 +742,10 @@
         color: #c4c4c4;
         width: 115px;
       }
+    }
+
+    > li:nth-child(1) {
+      display: block;
     }
   }
 
@@ -812,6 +817,7 @@
 
     > li {
       position: absolute;
+      display: none;
 
       > h1 {
         font-family: 'Ubuntu', sans-serif;
@@ -819,6 +825,10 @@
         color: #c4c4c4;
         width: 140px;
       }
+    }
+
+    > li:nth-child(1) {
+      display: block;
     }
   }
   
@@ -893,6 +903,7 @@
 
     > li {
       position: absolute;
+      display: none;
 
       > h1 {
         font-family: 'Ubuntu', sans-serif;
@@ -900,6 +911,10 @@
         color: #c4c4c4;
         width: 95px;
       }
+    }
+
+    > li:nth-child(1) {
+      display: block;
     }
   }
   
