@@ -57,9 +57,16 @@ module Jekyll
       @caption = nil
       @filetype = nil
       @highlight = true
+      @numbers = true
       if markup =~ /\s*lang:(\w+)/i
         @filetype = $1
         markup = markup.sub(/lang:\w+/i,'')
+      end
+      if markup =~ /\s*numbers:(\w+)/i
+        if $1 == 'false'
+          @numbers = false
+        end
+        markup = markup.sub(/numbers:\w+/i,'')
       end
       if markup =~ CaptionUrlTitle
         @file = $1
@@ -83,9 +90,9 @@ module Jekyll
       source = "<figure class='code'>"
       source += @caption if @caption
       if @filetype
-        source += " #{highlight(code, @filetype)}</figure>"
+        source += " #{highlight(code, @filetype, @numbers)}</figure>"
       else
-        source += "#{tableize_code(code.lstrip.rstrip.gsub(/</,'&lt;'))}</figure>"
+        source += "#{tableize_code(code.lstrip.rstrip.gsub(/</,'&lt;'), @numbers)}</figure>"
       end
       source = safe_wrap(source)
       source = context['pygments_prefix'] + source if context['pygments_prefix']

@@ -6,13 +6,13 @@ PYGMENTS_CACHE_DIR = File.expand_path('../../.pygments-cache', __FILE__)
 FileUtils.mkdir_p(PYGMENTS_CACHE_DIR)
 
 module HighlightCode
-  def highlight(str, lang)
+  def highlight(str, lang, numbers)
     lang = 'ruby' if lang == 'ru'
     lang = 'objc' if lang == 'm'
     lang = 'perl' if lang == 'pl'
     lang = 'yaml' if lang == 'yml'
     str = pygments(str, lang).match(/<pre>(.+)<\/pre>/m)[1].to_s.gsub(/ *$/, '') #strip out divs <div class="highlight">
-    tableize_code(str, lang)
+    tableize_code(str, numbers, lang)
   end
 
   def pygments(code, lang)
@@ -29,13 +29,21 @@ module HighlightCode
     end
     highlighted_code
   end
-  def tableize_code (str, lang = '')
-    table = '<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers">'
+  def tableize_code (str, numbers, lang = '')
+    table = '<div class="highlight"><table><tr>'
+    if numbers
+      table += '<td class="gutter"><pre class="line-numbers">'
+    end
     code = ''
     str.lines.each_with_index do |line,index|
-      table += "<span class='line-number'>#{index+1}</span>\n"
+      if numbers
+        table += "<span class='line-number'>#{index+1}</span>\n"
+      end
       code  += "<span class='line'>#{line}</span>"
     end
-    table += "</pre></td><td class='code'><pre><code class='#{lang}'>#{code}</code></pre></td></tr></table></div>"
+    if numbers
+      table += '</pre></td>'
+    end
+    table += "<td class='code'><pre><code class='#{lang}'>#{code}</code></pre></td></tr></table></div>"
   end
 end
