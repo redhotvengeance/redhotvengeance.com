@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Out of the Ashes...
+description: A new blog is born.
 author: Ian Lollar
 tags: [blog, code]
 ---

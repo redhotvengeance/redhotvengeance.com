@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Announcing: compiln'
+description: A Node.js asset compiler with choice.
 author: Ian Lollar
 tags: [code, nodejs, open-source, lib, compiln]
 ---
