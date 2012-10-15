@@ -36,7 +36,7 @@ Fire up Xcode, and open its Preferences. Head to the "Downloads" tab - see "Comm
 
 All done? On to the real shit.
 
-# Homebrew
+## Homebrew
 
 Like I said - I like package managers. If languages get them, why not your system? Enter [Homebrew](http://mxcl.github.com/homebrew/). Homebrew is the self-proclaimed "missing package manager for OS X". In a nutshell, it makes it easy to install all your tools, libs, and languages.
 
