@@ -1,0 +1,62 @@
+---
+layout: post
+title: The 90/10/0 Principle
+description: Programming vs. languages.
+author: Ian Lollar
+tags: [code, programming, languages]
+---
+As a person on the internet with a blog, I am entitled - nay! - **expected** to come up with fancy opinions and then haughtily pass them off as facts. And since I hate to disappoint my fabricated fans, I present to you:
+
+**The 90/10/0 Principle: Programming vs. Languages.**
+
+<!--more-->
+
+## Part 3: "0"
+Wait..."part 3?" What happened to parts 1 & 2?
+
+They're coming, I promise. But to most effectively explain my principle, it is best to start with the last part of it. You may ask: "Then why didn't you make the last part first?" To which I respond: "Because I'm a dramatic asshole, that's why."
+
+So, part 3: Programming languages have 0% to do with programming.
+
+That's not to say programming languages are not *integral* to programming - they certainly are. After all, having music certainly helps you learn how to dance. But in the end, I can dance without any music (actually, *I* can't really dance, but the metaphor stands). Dancing is made of things entirely separate of music: timing, flexibility, patterns, coordination, etc. On their own, those elements (properly honed) make you a dancer. Add music, and magic starts happening. But the music is complementary, not necessary.
+
+And so it is with programming as well - programming happens in the head, not the keyboard. When I sit down to start a new project, I almost always do, well, *nothing*. At least, it *appears* as though I'm doing nothing. I may be staring at a taupe wall, but behind my dull cow eyes, I'm programming. Or rather, problem solving. Read:
+
+**programming == problem solving**
+
+Learning to program means learning more and better ways to solve problems. And the deeper you dive into programming, the more complex the problems get. You start working with design patterns and frameworks, and conventions and best practices. But really, those are all fancy terms for widely-accepted ways of solving complex problems.
+
+Programming isn't in the language - programming is in your head.
+
+## Part 1: "90"
+I postulate that 90% of all programming languages are documentation.
+
+If programming is conceptualization, then programming languages are implementation. And like all implementations, there is never just one way to do something. In this case, there is not just one language. But that doesn't matter much, because programming languages are just a practical way to apply the theories you've been programming in your head.
+
+When it comes down to it, all programming languages carry a common thread - their purpose is to relay instructions. And to efficiently relay those instructions, all programming languages are built upon a common set of objects and concepts (i.e. numbers, strings, arrays, etc). Languages may vary in their implementations of these elements, but in the end, they are all (probably) going to be there. You just need to know how to access them.
+
+Thus, documentation. As a programmer, you know what you need to do - that's the theory. Now you just need to figure out the semantics of *doing it* in your particular language. As a problem solver (remember part 3?), learning a new programming language *mostly* turns out to be learning how to look up syntax specifics.
+
+## Part 2: "10"
+What was that? Ah, you noticed how I emphasized "mostly" in the last section? Yes, "mostly" implies that there is something left over. Here are the leftovers:
+
+The final 10% of programming languages is optimization.
+
+What do I mean by optimization? Well, programming languages (good ones, at least) are about more than syntax - programming languages are *designed*, and all things designed have subtle secrets. Those secrets give you access to turning your code from good to great.
+
+Programming language secrets can often take a long time to learn. They are what defines a language "specialist." Specialists have been working in a language long enough to know about its backdoors, cheat-codes, and wormholes. They know how to optimize their code because they know the language so intimately.
+
+## The Principle Point
+So what does this all mean? Do programming languages not matter?
+
+No, of course they do. After all, they are the tools of our craft. If you don't know how to use the tools, you can't build anything.
+
+But the beauty of being a good programmer is knowing that you don't need to rely on *one* particular tool. Most great programmers consider themselves "language agnostic," because they realize that learning a new language pretty much means opening an API doc (the "90%").
+
+Language specialization comes with time and experience - the more you work in a language, the more you'll uncover its fun, dirty little secrets. But remember, specializing is still only the 10%.
+
+Focus on the "0%", the real programming - the stuff in your head. Those are the principles that you'll carry with you through each project, each language, and each implementation. You never stop learning how to program, because you never stop learning how to problem solve.
+
+And problem solving is what we do.
+
+**- rhv**
