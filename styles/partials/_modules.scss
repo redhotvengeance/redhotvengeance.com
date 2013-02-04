@@ -317,6 +317,10 @@
   margin-bottom:40px;
   padding-left: 15px;
   padding-right: 15px;
+
+  a:hover {
+    border-bottom: 1px solid #901111;
+  }
 }
 
 .post-meta {
@@ -328,6 +332,15 @@
 }
 
 .post-content {
+  a {
+    opacity: .8;
+    border-bottom: 1px solid #901111;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+
   > h2 {
     max-width: 580px;
     text-align: center;
