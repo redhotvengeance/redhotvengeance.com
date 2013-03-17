@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Make Shit Better
-description: 
+description: Stop being complacent.
 author: Ian Lollar
 tags: [work, life, goals]
 ---
