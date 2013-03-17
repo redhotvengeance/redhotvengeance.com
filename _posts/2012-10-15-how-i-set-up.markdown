@@ -12,7 +12,7 @@ So it's time to set up a new box. Where to start?
 
 If you're anything like me, you like consistency. (Well, if you're like me, you *need* consistency because of some deep, OCD-level craziness.) That means I have want a simple and straightforward way to cleanly set up my working environment.
 
-What I work with changes all of the time, but right now, it includes Git, Ruby, and Node.js. So let's see what it takes to get that enironment up and running.
+What I work with changes all of the time, but right now, it includes Git, Ruby, and Node.js. So let's see what it takes to get that environment up and running.
 
 <!--more-->
 
