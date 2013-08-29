@@ -5,15 +5,14 @@ url: http://www.redhotvengeance.com
 permalink: pretty
 destination: public
 exclude:
-  - RedHotVengeance.sublime-project
-  - RedHotVengeance.sublime-workspace
+  - public
   - .gitignore
+  - app.rb
   - Gemfile
   - Gemfile.lock
-  - Rakefile
-  - app.rb
-  - public
   - Procfile
+  - Rakefile
+  - README.md
 excerpt_separator: <!--more-->
 paginate: 10
 paginate_path: "page/:num"
