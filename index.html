@@ -15,7 +15,7 @@ description: Words and word-shaped creations, furiously formed by Ian Lollar.
       <a href="{{ post.url }}">{{ post.title }}</a>
     </h1>
     <div class='post-content center'>
-      {{post.content | split:'<!--more-->' | first}}
+      {{post.excerpt}}
     </div>
     {% if post.content contains '<!--more-->' %}
     <div class='read-on center'>
