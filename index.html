@@ -28,11 +28,11 @@ description: Words and word-shaped creations, furiously formed by Ian Lollar.
   <li class='center'>
   {% if paginator.total_pages > 1 %}
     {% if paginator.previous_page %}
-      <a href="{{paginator.previous_page}}" class="pagination"><- Show me newer&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+      <a href="{{paginator.previous_page_path}}" class="pagination"><- Show me newer&nbsp;&nbsp;|&nbsp;&nbsp;</a>
     {% endif %}
     <span class="pagination ">RELENTLESS RANTINGS</span>
     {% if paginator.next_page %}
-      <a href="{{paginator.next_page}}" class="pagination">&nbsp;&nbsp;|&nbsp;&nbsp;Show me older -></a>
+      <a href="{{paginator.next_page_path}}" class="pagination">&nbsp;&nbsp;|&nbsp;&nbsp;Show me older -></a>
     {% endif %}
   {% endif %}
   </li>
