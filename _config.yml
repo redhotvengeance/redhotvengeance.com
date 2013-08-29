@@ -16,3 +16,7 @@ exclude:
 excerpt_separator: <!--more-->
 paginate: 10
 paginate_path: "page/:num"
+markdown: redcarpet
+pygments: true
+redcarpet:
+  extensions: [autolink, no_intra_emphasis, strikethrough, superscript, tables]
