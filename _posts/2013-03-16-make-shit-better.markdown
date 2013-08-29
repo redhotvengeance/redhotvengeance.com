@@ -5,6 +5,7 @@ description: Stop being complacent.
 author: Ian Lollar
 tags: [work, life, goals]
 ---
+
 Three months ago, I left the advertising agency I was working at. I had worked there for a little over three years.
 
 To be clear, it was a good company. The people were smart, the projects were (mostly) creative, and I learned a lot during my tenure. I made some great friends and we had a lot of fun. Still do, in fact.

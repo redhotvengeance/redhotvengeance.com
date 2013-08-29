@@ -1,5 +1,6 @@
 ---
 ---
+
 $(document).ready =>
   ## messages ##
   if $('.message-bar').length > 0

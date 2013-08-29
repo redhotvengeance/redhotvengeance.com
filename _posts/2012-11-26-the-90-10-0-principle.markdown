@@ -5,6 +5,7 @@ description: Programming vs. languages.
 author: Ian Lollar
 tags: [code, programming, languages]
 ---
+
 As a person on the internet with a blog, I am entitled - nay! - **expected** to come up with fancy opinions and then haughtily pass them off as facts. And since I hate to disappoint my fabricated fans, I present to you:
 
 **The 90/10/0 Principle: Programming vs. Languages.**
