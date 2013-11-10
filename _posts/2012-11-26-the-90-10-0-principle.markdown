@@ -12,9 +12,9 @@ As a person on the internet with a blog, I am entitled - nay! - **expected** to 
 
 <!--more-->
 
----  
+---
 
-**UPDATE (11/27/12):**  
+**UPDATE (11/27/12):**
 Some debate has highlighted an important omission from this post. Let me clarify. Programming does not have one category - there are many types of programming, and thus many types of programming languages. Arguably, the most popular type of programming is [imperative](http://en.wikipedia.org/wiki/Imperative_programming), with languages like C, C++, Java, etc. But there are other programming categories as well, like [declarative programming](http://en.wikipedia.org/wiki/Declarative_programming). Programming styles that fall under the declarative banner, such as [functional programming](http://en.wikipedia.org/wiki/Functional_programming), operate in a very different manner. It is easy to attribute languages like Haskell (functional) or SQL (declarative) as falling outside of the 90/10/0 principle - but really, they help support it. It is often difficult for programmers to move from Java to Haskell, but that has very little to do with syntax - it is the new concepts they struggle with. And concepts are all apart of the "0%" of the 90/10/0 principle. In the end, learning a programming language in a new category means growing in your **conceptual** knowledge of programming. Those new concepts improve your problem solving skills,  and result in the ability to more easily move between languages in that new category. At that point, it is back to the "90%" documentation and "10%" optimization.
 
 ---

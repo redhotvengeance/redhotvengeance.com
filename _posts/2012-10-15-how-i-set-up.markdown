@@ -42,43 +42,43 @@ Like I said - I like package managers. If languages get them, why not your syste
 
 Homebrew itself also happens to be rather easy to install. Fire up the Terminal, and execute:
 
-{% codeblock lang:bash %}
+```bash
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-{% endcodeblock %}
+```
 
 Now sit back and watch all of those glorious lines of automated code fly by.
 
 Once Homebrew finishes installing, you'll want to check that your system is configured properly to use it:
 
-{% codeblock lang:bash %}
+```bash
 brew doctor
-{% endcodeblock %}
+```
 
 If all is well, you should see: "Your system is raring to brew."
 
 You may have a couple of issues to solve. One common fix is to alter your PATH to have '/usr/local/bin/' occur before '/usr/bin'. Add the following line to your ".bash_profile" (if one doesn't exist yet, create it in your home directory):
 
-{% codeblock lang:bash %}
+```bash
 export PATH="/usr/local/bin:$PATH"
-{% endcodeblock %}
+```
 
 ## Git
 
 Now that you're raring to brew, let's start with Git. And not just the Git core, but also some handy extras:
 
-{% codeblock lang:bash %}
+```bash
 brew install git bash-completion
-{% endcodeblock %}
+```
 
 Watch as Homebrew handles all of that unpleasant *installing* and *building* for you. Ah, sweet automation.
 
 Once Git is installed, we need to add some lines to our .bash_profile to enable that bash-completion:
 
-{% codeblock lang:bash %}
+```bash
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
-{% endcodeblock %}
+```
 
 Now you can tab to complete Git commands - handy!
 
@@ -96,41 +96,41 @@ You guessed it - another package manager. There are actually two popular candida
 
 First we need to install rbenv - back to Homebrew! (It *is* handy, isn't it?)
 
-{% codeblock lang:bash %}
+```bash
 brew install rbenv
-{% endcodeblock %}
+```
 
 Once that is done, bust open that .bash_profile and add the following to it:
 
-{% codeblock lang:bash %}
+```bash
 eval "$(rbenv init -)"
-{% endcodeblock %}
+```
 
 Now, rbenv expects you to manually build your own versions of Ruby, which, if you ask me, is a pain in the ass. So let's grab a rbenv plugin to help us out with that:
 
-{% codeblock lang:bash %}
+```bash
 brew install ruby-build
-{% endcodeblock %}
+```
 
 Next, let's grab the latest version of Ruby:
 
-{% codeblock lang:bash %}
+```bash
 rbenv install 1.9.3-p194 --verbose
-{% endcodeblock %}
+```
 
 (I like to tag on the --verbose flag so I can see the download and install progress - it helps me know nothing has gone wrong.)
 
 Once our fresh and shiny version of Ruby is built, we need to tell rbenv that we want to use it:
 
-{% codeblock lang:bash %}
+```bash
 rbenv global 1.9.3-p194
-{% endcodeblock %}
+```
 
 Restart Terminal and check your Ruby version:
 
-{% codeblock lang:bash %}
+```bash
 ruby -v
-{% endcodeblock %}
+```
 
 Is it 1.9.3p194? Good! Moving on…
 
@@ -138,15 +138,15 @@ Is it 1.9.3p194? Good! Moving on…
 
 Now would be a good time to install your favorite gems. Like what, you ask? How about rails?
 
-{% codeblock lang:bash %}
+```bash
 gem install rails
-{% endcodeblock %}
+```
 
 Something to be aware of is the way rbenv operates is by building shims for the versions of Ruby and their gems. So when you install a new gem, you need to tell rbenv to rebuild those shims:
 
-{% codeblock lang:bash %}
+```bash
 rbenv rehash
-{% endcodeblock %}
+```
 
 Now you should be ready to ride the rails.
 
@@ -162,9 +162,9 @@ Head to http://nodejs.org/ and click "Install". Follow the installer instruction
 
 Boom. Noded. Proceed to install some node packages, like CoffeeScript:
 
-{% codeblock lang:bash %}
+```bash
 npm install -g coffee-script
-{% endcodeblock %}
+```
 
 ## Wrapping Up
 

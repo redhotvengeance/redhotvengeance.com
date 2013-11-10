@@ -1,6 +1,24 @@
 .highlight {
   overflow: auto;
   background-color:#333;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 550px;
+  text-align: left;
+}
+
+pre {
+  font-family: "Inconsolata", "Courier New", monospace;
+  padding-left: 10px;
+}
+
+.lineno {
+  margin-right: 5px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
 }
 
 .bogus-wrapper {
@@ -10,7 +28,7 @@
 
 .code {
   font-family: "Inconsolata", "Courier New", monospace;
-  font-size:1em;
+  font-size: 1em;
   max-width: 550px;
   margin-left:auto;
   margin-right:auto;

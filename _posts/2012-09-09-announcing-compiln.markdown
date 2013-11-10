@@ -40,7 +40,7 @@ If your particular stack uses something not on this list, then you can easily [w
 
 Let's say we're building an app on express, using [Jade](http://jade-lang.com/) for our markup templates, CoffeeScript for our scripts, and Stylus for our styles. Our directory structure would probably look something like this:
 
-{% codeblock numbers:false %}
+```
 my-awesome-app
   - app
     - markup
@@ -48,32 +48,32 @@ my-awesome-app
     - styles
   - public
   - app.js
-{% endcodeblock %}
+```
 
 Our Jade templates would live in "markup", our CoffeeScript files in "scripts", and our Stylus files in "styles". "public" is the root of our application (where our assets should compile into), and "app.js" is our express app.
 
 First, let's install compiln and the plugins we want to use:
 
-{% codeblock lang:bash %}
+```bash
 npm install compiln
 npm install compiln-coffeescript
 npm install compiln-stylus
-{% endcodeblock %}
+```
 
 Typically, compiln will be used as middleware. To integrate it into our express app, we first need to require it:
 
-{% codeblock app.js lang:js %}
+```js
 var compiln = require('compiln');
 var compiln_coffeescript = require('compiln-coffeescript');
 var compiln_stylus = require('compiln-stylus');
-{% endcodeblock %}
+```
 
 Next, we need to tell compiln what plugins to use. Think of compiln plugins as middleware for compiln. To inject the middleware, use the "use" method of compiln:
 
-{% codeblock app.js lang:js %}
+```js
 compiln.use(compiln_coffeescript, "/app", "/public");
 compiln.use(compiln_stylus, "/app", "/public");
-{% endcodeblock %}
+```
 
 The "use" method accepts four total parameters:
 
@@ -87,7 +87,7 @@ The "use" method accepts four total parameters:
 
 Next, we need to add the compiln middleware to our express app. Typically, you'll want to place the compiln middleware towards the bottom of the middleware chain, especially after the "static" middleware:
 
-{% codeblock app.js lang:js %}
+```js
 app.set('views', __dirname + '/app/markup');
 app.set('view engine', 'jade');
 app.set('view options', {layout: false});
@@ -95,7 +95,7 @@ app.use(express.methodOverride());
 app.use(express.bodyParser());
 app.use(express.static(__dirname + '/public'));
 app.use(compiln.compile({"buildOnStart":false, "buildOnRequest":true, "version":false}));
-{% endcodeblock %}
+```
 
 The "compile" method is the middleware to pass to express. It accepts an object as a parameter. That object can have three settings:
 
@@ -105,18 +105,18 @@ The "compile" method is the middleware to pass to express. It accepts an object 
 
 Now simply reference a file where you would expect it to be. For instance, let's say you made a Stylus file called "styles.styl" and put it in the appropriate source folder:
 
-{% codeblock numbers:false %}
+```
 my-awesome-app
   - app
     - styles
       - styles.styl
-{% endcodeblock %}
+```
 
 To reference it in your Jade template, just add a normal link tag:
 
-{% codeblock lang:jade %}
+```jade
 link(href="/styles/style.css", rel="stylesheet")
-{% endcodeblock %}
+```
 
 compiln will take care of the rest!
 
@@ -126,23 +126,23 @@ You bet!
 
 The "version" setting toggles whether the compiled files will be versioned (or "fingerprinted"). If "version" is set to true, the compiled filenames will have a unique identifier appended to them:
 
-{% codeblock numbers:false %}
+```
 main.1234567890abcdefghijklmnopqrstuv.js
-{% endcodeblock %}
+```
 
 This identifier is an MD5 hash, and its generation is based off of file contents. If you were to recompile the exact same file, it would have the exact same version number. This allows you to set the client-side caching of your assets to a very-long/never expiry date. If the file contents change, the client will be requesting a different filename.
 
 When assets are compiled, a "manifest.json" file is saved to the root directory. This JSON file maps the source files to their versioned filenames. compiln includes a helper method to retrieve the versioned filename of an asset. This is especially useful if you are using a templating language that allows for function calls, like Jade. To inject the versioned filename, simply use the "versionedFile" method:
 
-{% codeblock lang:jade %}
+```jade
 link(href="#{versionedFile('/styles/style.css')}", rel="stylesheet")
-{% endcodeblock %}
+```
 
 This will render HTML something like:
 
-{% codeblock lang:html %}
+```html
 <link href="/styles/style.1234567890abcdefghijklmnopqrstuv.css" rel="stylesheet">
-{% endcodeblock %}
+```
 
 ## When should I use "buildOnStart" and "buildOnRequest"?
 
@@ -152,18 +152,18 @@ This will render HTML something like:
 
 To utilize "buildOnStart", you must define the files to be compiled. This is done in an optional JSON file in the root, called "compiln.json":
 
-{% codeblock compiln.json lang:json %}
+```json
 {
   "sources": [
     "/scripts/main.js"
     "/styles/main.styl"
   ]
 }
-{% endcodeblock %}
+```
 
 You can also define plugins and settings in compiln.json:
 
-{% codeblock compiln.json lang:json %}
+```json
 {
   "buildOnStart": true,
   "buildOnRequest": false,
@@ -185,7 +185,7 @@ You can also define plugins and settings in compiln.json:
     "/styles/main.styl"
   ]
 }
-{% endcodeblock %}
+```
 
 Defining compiln settings this way eliminates the need to specify plugins and settings when initializing the compiln middleware. If you do still specify plugins and settings in the middleware, the middleware settings will override the compiln.json settings. This allows for you to define different middleware settings depending on your app/server environment.
 
@@ -197,21 +197,21 @@ compiln includes a CLI to allow you to compile your assets outside of your app a
 
 To use the CLI, install compiln globally:
 
-{% codeblock lang:bash %}
+```bash
 npm install -g compiln
-{% endcodeblock %}
+```
 
 A compiln.json is required in order to compile via the CLI. Once you've defined your settings, plugins, and source files in compiln.json, simply execute the "build" command:
 
-{% codeblock lang:bash %}
+```bash
 compiln build
-{% endcodeblock %}
+```
 
 By default, compiln will version the files. If you'd like to not utilize versioning, pass the "--bare" flag:
 
-{% codeblock lang:bash %}
+```bash
 compiln -b build
-{% endcodeblock %}
+```
 
 ## So how do I write a plugin?
 
@@ -219,30 +219,30 @@ compiln plugins require three methods to be defined. These methods should be mad
 
 * "module.exports.detect" - Should return an array of extensions. These are the extensions that the source files possess. The extensions **should not** include the dot:
 
-{% codeblock lang:js %}
+```js
 module.exports.detect = function()
 {
   return ["coffee"];
 };
-{% endcodeblock %}
+```
 
 * "module.exports.ext" - Should return a string of the destination extension (the extension the source file will compile into). This **should not** include the dot:
 
-{% codeblock lang:js %}
+```js
 module.exports.ext = function()
 {
   return "js";
 };
-{% endcodeblock %}
+```
 
 * "module.exports.compile" - Accepts two parameters: "file" and "options". "file" is the source file path. "options" will contain any options passed when the plugin is passed to compiln. This method should load the source file (via "fs.readFileSync") and return the compiled data:
 
-{% codeblock lang:js %}
+```js
 module.exports.compile = function(file, options)
 {
   return coffeescript.compile(fs.readFileSync(file, "utf8"));
 };
-{% endcodeblock %}
+```
 
 That's it - about as simple as it can get.
 

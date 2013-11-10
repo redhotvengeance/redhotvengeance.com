@@ -39,7 +39,7 @@ What's nice about Jekyll is that it is fairly easy to customize.
 
 I'm a fan of preprocessors, like CoffeeScript and Sass. So, naturally, it'd be nice to include compiling those along with building my site. Fairly simple: add a plugin for each in the "_plugins" folder. For example, the CoffeeScript plugin looks like this:
 
-{% codeblock coffeescript_converter.rb lang:ruby %}
+```ruby
 module Jekyll
   require 'coffee-script'
 
@@ -64,13 +64,13 @@ module Jekyll
     end
   end
 end
-{% endcodeblock %}
+```
 
 Now when Jekyll builds, any file with a ".coffee" extension will be ran through this converter, which will compile it into JavaScript.
 
 Another handy use for plugins are Liquid extensions. For instance, I wanted to customize how post dates would appear, so I wrote a small Liquid extension:
 
-{% codeblock data_to_day_month_year.rb lang:ruby %}
+```ruby
 module Jekyll
   module DateToDayMonthYearPipeFilter
     def date_to_day_month_year(input)
@@ -80,19 +80,19 @@ module Jekyll
 end
 
 Liquid::Template.register_filter(Jekyll::DateToDayMonthYearPipeFilter)
-{% endcodeblock %}
+```
 
 Using the extension is simple:
 
-{% codeblock lang:html %}
+```html
 <time datetime='{{ "{{post.date" }}}}'>{{ "{{post.date | date_to_day_month_year" }}}}</time>
-{% endcodeblock %}
+```
 
 The result being:
 
-{% codeblock lang:html %}
+```html
 <time datetime='2012-09-03 00:00:00 -0700' class='post-date'>Monday, September 03, 2012</time>
-{% endcodeblock %}
+```
 
 There are lots of handy open-sourced Jekyll extensions out there for you to use. [Octopress](http://octopress.org/) has made some very nice ones, several of which I'm using for this site.
 
@@ -104,7 +104,7 @@ This presents a challenge, however. I prefer to keep compiled files out of my co
 
 Git hooks to the rescue! Initialize a bare Git repo on your server, and add a post-receive hook:
 
-{% codeblock post-receive lang:bash %}
+```bash
 #!/bin/sh
 export GIT_WORK_TREE=<path to Jekyll environment>
 
@@ -112,7 +112,7 @@ git checkout -f
 cd $GIT_WORK_TREE
 bundle install
 jekyll <path to public site folder>
-{% endcodeblock %}
+```
 
 (Depending on your server/host, you may need to add extra exports that point at the appropriate gem/lib/bin folders.)
 
