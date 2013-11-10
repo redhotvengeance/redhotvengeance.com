@@ -6,6 +6,7 @@ permalink: pretty
 destination: public
 exclude:
   - public
+  - vendor
   - .gitignore
   - app.rb
   - Gemfile
