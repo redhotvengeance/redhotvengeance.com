@@ -73,8 +73,18 @@
     $(item).hide();
   }
 
+  function setDates() {
+    var dates = $(".post-date");
+
+    for (var i = 0; i < dates.length; i++) {
+      var dateElement = $(dates[i]);
+      dateElement.text(moment($(dates[i]).text()).fromNow());
+    }
+  }
+
   $(document).ready(function() {
     setMessage();
     setAbout();
+    setDates();
 	});
 }).call(this);
