@@ -22,7 +22,7 @@ This article is assuming you're on Mac OS X (version 10.8.2, to be specific). A 
 
 First, Xcode. Pretty easy - bust open the Mac App Store, search "Xcode", and hit "Install". What's that? You're lazy like me? [Here's a link.](https://itunes.apple.com/us/app/xcode/id497799835)
 
-{% img post-image https://s3.amazonaws.com/redhotvengeance/how-i-set-up/howisetup_xcode.jpg 700 'Xcode Install' %}
+![Xcode Install](https://s3.amazonaws.com/redhotvengeance/how-i-set-up/howisetup_xcode.jpg)
 
 So...Xcode is kinda big. And installs slow. I suggest getting a chai. I'll wait...
 
@@ -32,7 +32,7 @@ Xcode is actually a means to an end - what we really want are Xcode's Command Li
 
 Fire up Xcode, and open its Preferences. Head to the "Downloads" tab - see "Command Line Tools?" Install that sucka.
 
-{% img post-image https://s3.amazonaws.com/redhotvengeance/how-i-set-up/howisetup_xcode_cli.jpg 700 'Xcode Install CLI' %}
+![Xcode Install CLI](https://s3.amazonaws.com/redhotvengeance/how-i-set-up/howisetup_xcode_cli.jpg)
 
 All done? On to the real shit.
 
@@ -158,7 +158,7 @@ So how about some Node.js? This is an easy one.
 
 Head to http://nodejs.org/ and click "Install". Follow the installer instructions.
 
-{% img post-image https://s3.amazonaws.com/redhotvengeance/how-i-set-up/howisetup_node.jpg 700 'Install Node.js' %}
+![Install Node.js](https://s3.amazonaws.com/redhotvengeance/how-i-set-up/howisetup_node.jpg)
 
 Boom. Noded. Proceed to install some node packages, like CoffeeScript:
 

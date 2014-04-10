@@ -74,11 +74,11 @@ There are two main ways of interacting with Deep Thought - via the web interface
 
 Deep Thought's web interface is a front-end that lets you manage and deploy through the browser. It is responsively designed and mobile-ready. To access it, simply hit the root url or IP your Deep Thought is hosted at.
 
-{% img post-image https://s3.amazonaws.com/redhotvengeance/announcing-deep-thought/announcingdeepthought_login.jpg 700 'Deep Thought login' %}
+![Deep Thought login](https://s3.amazonaws.com/redhotvengeance/announcing-deep-thought/announcingdeepthought_login.jpg)
 
 You'll have to authenticate yourself via email/password before having access to any part of Deep Thought. Once logged in, you will be able to setup new projects, add users, manage your account, and, of course, deploy projects.
 
-{% img post-image https://s3.amazonaws.com/redhotvengeance/announcing-deep-thought/announcingdeepthought_deploy.jpg 700 'Deep Thought deploy project' %}
+![Deep Thought deploy project](https://s3.amazonaws.com/redhotvengeance/announcing-deep-thought/announcingdeepthought_deploy.jpg)
 
 In addition to kicking off deployments, you can also see a project's deployment history to check on previous deployments and see if they were successful or not.
 
