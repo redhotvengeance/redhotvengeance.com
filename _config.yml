@@ -7,7 +7,6 @@ destination: public
 exclude:
   - public
   - .gitignore
-  - app.rb
   - Gemfile
   - Gemfile.lock
   - Rakefile
