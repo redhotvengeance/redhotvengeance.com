@@ -6,12 +6,10 @@ permalink: pretty
 destination: public
 exclude:
   - public
-  - vendor
   - .gitignore
   - app.rb
   - Gemfile
   - Gemfile.lock
-  - Procfile
   - Rakefile
   - README.md
 excerpt_separator: <!--more-->
