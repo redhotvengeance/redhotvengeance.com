@@ -1,4 +1,6 @@
 ---
+safe: true
+lsi: false
 name: Red Hot Vengeance
 description: Words and word-shaped creations, furiously formed by Ian Lollar.
 url: http://www.redhotvengeance.com
